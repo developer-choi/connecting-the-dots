@@ -5,7 +5,7 @@
 }
 
 button {
-  border: none;
+  border: 2px solid transparent;
   background: transparent;
   font: inherit;
   color: inherit;
@@ -21,4 +21,18 @@ dialog {
   height: 100%;
   max-width: none;
   max-height: none;
+}
+
+button, input {
+  outline: none;
+}
+
+button.styled {
+  border-color: lightgray;
+  padding: 12px 24px;
+}
+
+button:focus, input:focus {
+  border-color: red;
+  border-style: dashed;
 }
